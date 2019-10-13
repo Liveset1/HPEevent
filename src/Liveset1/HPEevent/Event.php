@@ -24,7 +24,7 @@ use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\utils\TextFormat as C;
 
 
-class Event extends PluginBase implements Listener{
+class Event extends PluginBase implements Listener {
 
     public function onLoad(){
         $this->getLogger()->info("Event Loading");
