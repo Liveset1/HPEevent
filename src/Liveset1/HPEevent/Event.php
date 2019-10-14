@@ -1,6 +1,6 @@
 <?php
 
-namespace: Liveset1\HPEevent;
+namespace Liveset1\HPEevent;
 
 use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\plugin\PluginBase;
