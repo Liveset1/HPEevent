@@ -34,10 +34,4 @@ class Event extends PluginBase implements Listener {
         $name = $player->getName();
         $this->getServer()->broadcastMessage(c::BLACK."[".c::GREEN."+".c::BLACK."]".c::GREEN."$name");
     }
-    public function onQuit(PlayerQuitEvent $quitEvent){ 
-        $player = $quitEvent->getPlayer();
-        $name = $player->getName();
-        $this->getServer()->broadcastMessage(c::BLACK."[".c::RED."-".c::BLACK."]".c::RED."$name");
-    }
-}
 }
