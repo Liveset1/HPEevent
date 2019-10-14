@@ -2,7 +2,6 @@
 
 namespace Liveset1\HPEevent;
 
-use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\plugin\PluginBase;
 
 use pocketmine\event\player\PlayerJoinEvent;
@@ -53,4 +52,6 @@ class Event extends PluginBase implements Listener {
         $nkiller = $killer->getName();
         $this->getServer()->broadcastMessage(c::RED."$name".c::BLUE."has been killed by".c::GREEN."$nkiller");
     }
-
+}
+}
+}
