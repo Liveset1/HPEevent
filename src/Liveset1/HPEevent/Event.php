@@ -14,12 +14,6 @@ use pocketmine\Server;
 
 use pocketmine\event\Listener;
 
-use pocketmine\event\entity\EntityDamageEvent;
-
-use pocketmine\event\entity\EntityDamageByChildEntityEvent;
-
-use pocketmine\event\entity\EntityDamageByEntityEvent;
-
 use pocketmine\utils\TextFormat as C;
 
 
@@ -45,13 +39,5 @@ class Event extends PluginBase implements Listener {
         $name = $player->getName();
         $this->getServer()->broadcastMessage(c::BLACK."[".c::RED."-".c::BLACK."]".c::RED."$name");
     }
-    public function onDeath(PlayerDeathEvent $deathEvent){
-        $player = $deathEvent->getEntity();
-        $name = $player->getName();
-        $killer = $deathEvent->getEntity()->getLastDamageCause()->getDamager();
-        $nkiller = $killer->getName();
-        $this->getServer()->broadcastMessage(c::RED."$name".c::BLUE."has been killed by".c::GREEN."$nkiller");
-    }
-}
 }
 }
