@@ -1,6 +1,6 @@
 name: HPEevent
 main: Liveset1\HPEevent\Event
-version: 0.1
-api: 3.0.0
+version: 1.0.0
+api: 3.9.5
 author: Liveset1
 description: A Join, Leave, and Death Event!
